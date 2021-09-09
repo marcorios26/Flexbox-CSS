@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox </title>
+    <style>
+        *,
+        *::after,
+        *::before {
+            box-sizing: border-box;
+        }
+        
+        .container {
+            background-color: rgb(88, 158, 126);
+            height: 400px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            /* flex-flow: column wrap;*/
+            justify-content: flex-start;
+            align-items: stretch;
+            align-content: flex-start;
+            width: 100%;
+        }
+        
+        .item {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: large;
+            background-color: beige;
+            border: medium solid #999;
+            width: 200px;
+            /* height: 20%;*/
+            flex-grow: 0;
+            flex-shrink: 1;
+            flex-basis: 50px;
+            flex: 0 1 100px;
+        }
+        /* .item:nth-child(2) {
+            font-size: 250%;
+        }*/
+        /*.item:nth-child(2) {
+            flex-grow: 3;
+        }
+        
+        .item:nth-child(3) {
+            flex-grow: 2;
+        }*/
+        /*.item:nth-child(2) {
+            flex-shrink: 2;
+        }*/
+        /*
+        .item:nth-child(3) {
+            flex-shrink: 3;
+        }*/
+        /*
+        .item:nth-child(3) {
+            flex-basis: 200px;
+        }*/
+    </style>
+</head>
+
+<body>
+    <section class="container">
+        <article class="item">Flex Item 1</article>
+        <article class="item">Flex Item 2</article>
+        <article class="item">Flex Item 3</article>
+
+    </section>
+    <br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <section class="container">
+        <article class="item">Flex Item 11</article>
+        <article class="item">Flex Item 21</article>
+        <article class="item">Flex Item 31</article>
+
+    </section>
+    <br>
+    <section class="container">
+        <article class="item">Item 1</article>
+        <article class="item">Item 2</article>
+        <article class="item">Item 3</article>
+        <article class="item">Item 4</article>
+        <article class="item">Item 5</article>
+        <article class="item">Item 6</article>
+        <article class="item">Item 7</article>
+        <article class="item">Item 8</article>
+        <article class="item">Item 9</article>
+        <article class="item">Item 10</article>
+        <article class="item">Item 11</article>
+        <article class="item">Item 12</article>
+        <article class="item">Item 13</article>
+        <article class="item">Item 14</article>
+        <article class="item">Item 15</article>
+        <article class="item">Item 16</article>
+        <article class="item">Item 17</article>
+        <article class="item">Item 18</article>
+        <article class="item">Item 19</article>
+    </section>
+
+</body>
+
+</html>
